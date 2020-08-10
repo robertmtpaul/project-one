@@ -10,7 +10,7 @@ puts "Creating users"
 
 User.destroy_all
 
-u1 = User.create! email: 'robbie@ga.co', password: 'chicken', name: 'Robbie', image: 'http://place-puppy.com/200x200', bio: 'Blah', linkedin: 'www.linkedin.com'
+User.create! email: 'robbie@ga.co', password: 'chicken', name: 'Robbie', image: 'http://place-puppy.com/200x200', bio: 'Blah', linkedin: 'www.linkedin.com'
 
 puts "Created  #{ User.count } users"
 

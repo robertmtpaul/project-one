@@ -1,7 +1,5 @@
 class User < ApplicationRecord
 
-    has_many :favourites
-
     # Use brcypt gem
     has_secure_password
 
