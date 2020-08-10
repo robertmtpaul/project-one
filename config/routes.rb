@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get 'cities/new'
+  get 'cities/create'
+  get 'cities/index'
+  get 'cities/show'
+  get 'cities/edit'
+  get 'cities/update'
+  get 'cities/destroy'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   
   root to: 'pages#welcome'
@@ -14,6 +21,8 @@ Rails.application.routes.draw do
   #logout
   
   resources :users
+  
+  resources :cities
 
   resources :favourites
 

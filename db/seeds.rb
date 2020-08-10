@@ -16,4 +16,13 @@ User.create! email: 'lay@ga.co', password: 'chicken', name: 'Lay', image: 'http:
 
 puts "Created  #{ User.count } users"
 
+puts "Creating cities"
+
+City.destroy_all
+
+City.create! name: 'Berlin', rank: 3, mercer: '2020: ranked 9th', image1: 'http://place-puppy.com/200x200', image2: 'http://place-puppy.com/200x200', internet_speed: 'pretty good', startups: '200'
+
+City.create! name: 'Canggu', rank: 1, mercer: '2020: ranked 400', image1: 'http://place-puppy.com/200x200', image2: 'http://place-puppy.com/200x200', internet_speed: 'really good', startups: '4'
+
+puts "Created  #{ City.count } cities"
 
