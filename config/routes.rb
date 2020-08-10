@@ -5,20 +5,14 @@ Rails.application.routes.draw do
   get '/home' => 'pages#home'
   # Session routes;
   get '/login' => 'session#new'
-
+  # login form
+  # form submits to here, authenticates
+  # post '/login' => 'session#create'
+  # delete '/login' => 'session#destroy'
+  #logout
   
-  get 'users/new'
-  get 'users/create'
-  get 'users/index'
-  get 'users/show'
-  get 'users/edit'
-  get 'users/update'
-  get 'users/destroy'
-
+  resources :users
 
   resources :favourites
-
-
-
 
 end
