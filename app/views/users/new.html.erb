@@ -1,7 +1,7 @@
 <h2> Create an account</h2>
 
 
-<% if @users.errors.full_messages.any? %>
+<% if @user.errors.full_messages.any? %>
     <ul>
         <% @user.errors.full_messages.each do |e| %>
         <li><%= e  %></li>
