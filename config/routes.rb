@@ -6,9 +6,9 @@ Rails.application.routes.draw do
   # Session routes;
   get '/login' => 'session#new'
   # login form
-  # form submits to here, authenticates
-  # post '/login' => 'session#create'
-  # delete '/login' => 'session#destroy'
+  # form submits to here, does authentication, 
+  post '/login' => 'session#create'
+  delete '/login' => 'session#destroy'
   #logout
   
   resources :users

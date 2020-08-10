@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def new
-    @User = User.new # b/c the form_form helper needs @user.
+    # @User = User.new # b/c the form_form helper needs @user.
   end
 
   def create
