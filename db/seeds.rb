@@ -12,6 +12,8 @@ User.destroy_all
 
 User.create! email: 'robbie@ga.co', password: 'chicken', name: 'Robbie', image: 'http://place-puppy.com/200x200', bio: 'Blah', linkedin: 'www.linkedin.com'
 
+User.create! email: 'lay@ga.co', password: 'chicken', name: 'Lay', image: 'http://place-puppy.com/200x200', bio: 'Blah', linkedin: 'www.linkedin.com'
+
 puts "Created  #{ User.count } users"
 
 

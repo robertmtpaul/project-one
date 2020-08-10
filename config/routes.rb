@@ -3,11 +3,13 @@ Rails.application.routes.draw do
   
   root to: 'pages#welcome'
   get '/home' => 'pages#home'
+  
   # Session routes;
   get '/login' => 'session#new'
   # login form
   # form submits to here, does authentication, 
   post '/login' => 'session#create'
+
   delete '/login' => 'session#destroy'
   #logout
   
