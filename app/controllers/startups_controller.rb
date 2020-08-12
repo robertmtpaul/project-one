@@ -5,7 +5,7 @@ class StartupsController < ApplicationController
 
   def create
     Startup.create startup_params #
-    redirect_to startups_index_path
+    redirect_to all_startups_path
   end
 
   def index

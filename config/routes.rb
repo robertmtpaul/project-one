@@ -21,7 +21,7 @@ Rails.application.routes.draw do
 
   # READ   
   # 1. Index page - all startups
-  get '/startups/index' => 'startups#index'
+  get '/startups/index' => 'startups#index', as: 'all_startups'
 
 # 2. Show page for   a single startup by ID.
 # 'as: 'startup' tells rails to make the path helper method with the name 'startup_path'
