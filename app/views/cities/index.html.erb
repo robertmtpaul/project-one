@@ -1,5 +1,9 @@
-<h2>
-    <% @cities.each do |c| %>
-        <%= link_to c.name, city_path(c.id) %>
-    <% end%>
-</h2>
+
+<% @cities.each do |city| %>
+    <%= link_to city_path(city.id) do %>
+        <%= city.name %>
+        <%= image_tag(city.image1) %>
+        <br>
+    <% end %>
+<% end %>
+

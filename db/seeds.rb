@@ -20,9 +20,9 @@ puts "Creating cities"
 
 City.destroy_all
 
-City.create! name: 'Berlin', rank: 3, mercer: '2020: ranked 9th', image1: 'http://place-puppy.com/200x200', image2: 'http://place-puppy.com/200x200', internet_speed: 'pretty good', startups: '200'
+City.create! name: 'Berlin', rank: 3, mercer: '2020: ranked 9th', image1: 'https://res.cloudinary.com/dgqqw6hwo/image/upload/v1597132146/berlin_thumbnail_buxa7e.jpg', image2: 'https://res.cloudinary.com/dgqqw6hwo/image/upload/v1597131564/Berlin1.jpg', internet_speed: 'avg. 30Mbps', startups: '200'
 
-City.create! name: 'Canggu', rank: 1, mercer: '2020: ranked 400', image1: 'http://place-puppy.com/200x200', image2: 'http://place-puppy.com/200x200', internet_speed: 'really good', startups: '4'
+City.create! name: 'Canggu', rank: 1, mercer: '2020: ranked 400', image1: 'https://res.cloudinary.com/dgqqw6hwo/image/upload/v1597138173/canggu_thumbnail.jpg', image2: 'http://place-puppy.com/200x200', internet_speed: 'avg. 19Mbps', startups: '4'
 
 puts "Created  #{ City.count } cities"
 

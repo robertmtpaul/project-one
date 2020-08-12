@@ -1,11 +1,23 @@
 <h2><%= @city.name %></h2>
 
-<br>
+    <%= image_tag @city.image1, alt: @city.name, class: 'city' %>
 
 <p>
-    <strong>Rank</strong> <%= @city.rank %>
+    <strong>Nomadlist Rank:</strong> <%= @city.rank %>
 </p>
 
 <p>
-    <strong>First image</strong>
+    <strong>Mercer quality of life rank:</strong> <%= @city.mercer %>
 </p>
+
+<p> 
+    <strong>📡:</strong>
+    <%= @city.internet_speed %>
+</p>
+
+<p>
+    <strong>Number of startups:</strong>
+    <%= @city.startups %>
+</p>
+
+    <%= image_tag @city.image2, alt: @city.name, class: 'city' %>
