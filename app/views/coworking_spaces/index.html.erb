@@ -1,0 +1,9 @@
+<h2> All coworking spaces </h2>
+
+<ul>
+<% @coworking_spaces.each do |cowork| %>
+    <li>
+        <%= link_to cowork.name, coworking_space_path(cowork.id) %>
+    </li>
+<% end %>
+</ul>

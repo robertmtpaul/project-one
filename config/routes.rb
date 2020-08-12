@@ -13,10 +13,9 @@ Rails.application.routes.draw do
   delete '/login' => 'session#destroy'
   #logout
   
-
   resources :users
   resources :startups
   resources :cities
   resources :favourites
-
+  resources :coworking_spaces
 end

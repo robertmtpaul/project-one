@@ -35,6 +35,13 @@ Startup.create! name: 'HelloFresh', description: 'Unicorn company now with multi
 
 Startup.create! name: 'GetYourGuide', city_id: 1, description: 'Operates an online platform for booking tours, attractions and activities worldwide', valuation: 200000, funding: 'Series E, $654.5M', status: 'unicorn, private', employees: 2, favourite_id: '2', country_id: '3',image: 'getyourguide.png'
 
-
 puts "Created  #{ Startup.count } startups"
+
+puts "Creating coworking spaces"
+
+CoworkingSpace.destroy_all
+
+CoworkingSpace.create! name: 'Dojo', image: 'canggu1.jpg', description: 'Great space with lots of good companies', reviews: 'Blah said that it was of dubious repute but boasted great views', companies: 'GetYourGuide have their offices in here'
+
+CoworkingSpace.create! name: 'Betahaus', image: 'berlin2.jpg', description: 'Cold and unwelcoming', reviews: 'Blah said that it was of dubious repute but boasted great views', companies: 'GetYourGuide have their offices in here'
 
