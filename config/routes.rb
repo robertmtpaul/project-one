@@ -13,31 +13,11 @@ Rails.application.routes.draw do
   delete '/login' => 'session#destroy'
   #logout
   
-  # Startups CRUD
-
-  # CREATE 
-  get '/startups/new' => 'startups#new'
-  post '/startups' => 'startups#create'
-
-  # READ   
-  # 1. Index page - all startups
-  get '/startups/index' => 'startups#index', as: 'all_startups'
-
-# 2. Show page for   a single startup by ID.
-# 'as: 'startup' tells rails to make the path helper method with the name 'startup_path'
-  get '/startups/:id' => 'startups#show', as: 'startup'
-  
-  # EDIT  
-  get '/startups/edit'
-
-
-
-  get '/startups/update'
-
+ 
   # DESTROY
 
   resources :users
-  
+  resources :startups
   resources :cities
 
   resources :favourites
