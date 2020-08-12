@@ -29,7 +29,11 @@ puts "Created  #{ City.count } cities"
 puts "Creating startups"
 Startup.destroy_all
 
-Startup.create! name: 'N26', description: 'Unicorn startup in fintech space', valuation: '270000000', funding: 'Private equity investment', status: 'private', city_id: 1, employees: '2', favourite_id: '1', country_id: '2'
+Startup.create! name: 'N26', description: 'Unicorn startup in fintech space operating throughout Europe. Based in Berlin.', valuation: 270000000, funding: 'Series D', status: 'private', city_id: 1, employees: 1500, favourite_id: '1', country_id: '2'
+
+Startup.create! name: 'HelloFresh', description: 'Unicorn company now with multinational operations.', valuation: 270000000, funding: 'IPO', status: 'public IPO', city_id: 1, employees: 4726, favourite_id: '1', country_id: '2'
+
+Startup.create! name: 'GetYourGuide', city_id: 1, description: 'Operates an online platform for booking tours, attractions and activities worldwide', valuation: 200000, funding: 'Series E, $654.5M', status: 'unicorn, private', employees: 2, favourite_id: '2', country_id: '3'
 
 
 puts "Created  #{ Startup.count } startups"

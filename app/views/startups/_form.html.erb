@@ -1,0 +1,29 @@
+<%= form_for @startup do |f| %>
+
+  <%= f.label :name %><br>
+  <%= f.text_field :name %>
+  <br>
+
+  <%= f.label :description %><br>
+  <%= f.text_field :description %>
+  <br>
+
+  <%= f.label :valuation %><br>
+  <%= f.text_field :valuation %>
+  <br>
+
+  <%= f.label :funding %><br>
+  <%= f.text_field :funding %>
+  <br>
+
+  <%= f.label :status %><br>
+  <%= f.text_field :status %>
+  <br>
+
+  <%= f.label :employees %><br>
+  <%= f.text_field :employees %>
+  <br>
+
+  <%= f.submit %>
+
+<% end %>

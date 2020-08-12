@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 2020_08_12_031753) do
     t.text "title"
     t.integer "user_id"
     t.text "image"
-    t.datetime "created_at", null: false
+    t.datetime "created_at", null: false  
     t.datetime "updated_at", null: false
   end
 
