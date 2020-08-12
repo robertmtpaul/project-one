@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   
   root to: 'pages#welcome'
-  get '/home' => 'pages#home'
+  get '/home' => 'cities#index'
   
   # Session routes;
   get '/login' => 'session#new'
@@ -13,13 +13,10 @@ Rails.application.routes.draw do
   delete '/login' => 'session#destroy'
   #logout
   
- 
-  # DESTROY
 
   resources :users
   resources :startups
   resources :cities
-
   resources :favourites
 
 end

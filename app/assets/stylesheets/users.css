@@ -2,3 +2,7 @@
     color: red;
     display: inline-block;
 }
+
+input {
+    border: 1px solid rgb(113, 192, 155);
+}

@@ -1,5 +1,10 @@
 <h2> <%= @startup.name %> </h2>
 
+<%= link_to 'Edit Startup', edit_startup_path(@startup.id) %>
+|
+<%= link_to 'Delete Startup', startup_path(@startup.id), method: 'delete' %>
+
+
 <p>
     <strong>Startup description:</strong> <%= @startup.description %>
 </p>
@@ -26,4 +31,7 @@
     <strong>City:</strong>
     <%= @startup.city_id %>
 </p>
+
+  <%= cl_image_tag @startup.image, alt: @startup.name, class: 'startup' %>
+
 

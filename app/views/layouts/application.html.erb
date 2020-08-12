@@ -12,20 +12,21 @@
   </head>
 
   <body>
-  <h1> Nomad List! </h1>
+  <h1> <%= link_to 'NomadList!', root_path %></h1>
     <nav>
     <% if @current_user.present?%>
-    Hello, <%= @current_user.name %> |
+    Hello, <%= @current_user.name %> |       <li><%= link_to 'Best Cities for Digital Nomads |', cities_path %></li>
+      <li><%= link_to 'All startups |', startups_path %></li>
     <%= link_to 'Logout', login_path, method: 'delete'%>
     <% else %>
-      <%= link_to 'Login', login_path %>
-
-      <%= link_to 'Sign Up', new_user_path %>
-      <%= link_to 'Best Cities for Digital Nomads', cities_path %>
-      <%= link_to 'All startups', startups_path %>
-      <%= link_to 'Add a startup', new_startup_path %>
-
+    <ul>
+      <li> <%= link_to 'Login', login_path %></li>
+      <li><%= link_to 'Sign Up |', new_user_path %> </li>
+      <li><%= link_to 'Best Cities for Digital Nomads |', cities_path %></li>
+      <li><%= link_to 'All startups |', startups_path %></li>
+      <li><%= link_to 'Add a startup', new_startup_path %></li>
     <% end %>
+
     </nav>
     <hr>
     <%= yield %>

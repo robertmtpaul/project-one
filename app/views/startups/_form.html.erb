@@ -23,6 +23,10 @@
   <%= f.label :employees %><br>
   <%= f.text_field :employees %>
   <br>
+  
+  <%= f.label :image, 'Image URL' %><br>
+  <%= f.cl_image_upload :image %>
+
 
   <%= f.submit %>
 
