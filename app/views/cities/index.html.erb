@@ -1,8 +1,8 @@
 <% @cities.each do |city, startups| %>
     <div class="card">
+            <%= link_to city_path(city.id) do %>
         <div class="card-img-top"><%= image_tag(city.image1, class: "card-img-top") %></div>
         <div class="card-block">
-            <%= link_to city_path(city.id) do %>
                 <p class="card-title"><b><%= city.name %></p>
                 <p class="card-text"></p>                  
             <% end %>
