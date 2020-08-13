@@ -4,7 +4,7 @@
 |
 <%= link_to 'Delete coworking space', coworking_space_path(@coworking_space.id), method: 'delete' %>
 
-  <%= image_tag @coworking_space.image, alt: @coworking_space.name, class: 'coworking' %>
+  <%= cl_image_tag @coworking_space.image, alt: @coworking_space.name, class: 'coworking' %>
 
 <p>
     <strong>Coworking space description:</strong> <%= @coworking_space.description %>
@@ -20,6 +20,10 @@
 <p>
     <strong>companies:</strong>
     <%= @coworking_space.companies %>
+</p>
+
+<p>
+    <strong>URL:</strong> <%= @coworking_space.url %>
 </p>
 
 

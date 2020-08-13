@@ -15,18 +15,16 @@
   <h1> <%= link_to 'NomadList!', root_path %></h1>
     <nav>
     <% if @current_user.present?%>
-    Hello, <%= @current_user.name %> |       <li><%= link_to 'Best Cities for Digital Nomads |', cities_path %></li>
-      <li><%= link_to 'All startups |', startups_path %></li>
-    <%= link_to 'Logout', login_path, method: 'delete'%>
-    <% else %>
+    Hello, <%= @current_user.name %> | <%= link_to 'Logout', login_path, method: 'delete'%>
     <ul>
+    <% else %>
       <li> <%= link_to 'Login', login_path %></li>
       <li><%= link_to 'Sign Up |', new_user_path %> </li>
+    <% end %>
       <li><%= link_to 'Best Cities for Digital Nomads |', cities_path %></li>
       <li><%= link_to 'All startups |', startups_path %></li>
-      <li><%= link_to 'Add a startup', new_startup_path %></li>
-    <% end %>
-
+      <li><%= link_to 'Add a startup |', new_startup_path %></li>
+      <li><%= link_to 'Add a coworking space', new_coworking_space_path %></li>
     </nav>
     <hr>
     <%= yield %>

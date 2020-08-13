@@ -1,7 +1,11 @@
-<%= form_for @coworking_space do |f| %>
+<%= form_for @coworking_space, html: {multipart: true} do |f| %>
 
   <%= f.label :name %><br>
   <%= f.text_field :name %>
+  <br>
+  
+  <%= f.label :image, 'Image URL' %>
+  <%= f.cl_image_upload :image %>
   <br>
 
   <%= f.label :description %><br>
@@ -15,10 +19,8 @@
   <%= f.label :companies %><br>
   <%= f.text_field :companies %>
   <br>
+  <br>
   
-  <%= f.label :image, 'Image URL' %><br>
-  <%= f.cl_image_upload :image %>
-
   <%= f.submit %>
 
 <% end %>

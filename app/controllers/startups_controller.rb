@@ -6,7 +6,8 @@ class StartupsController < ApplicationController
   end
 
   def create
-
+    
+    @startup = Startup.create startup_params #
     # Handle upload, if file was uploaded
     if params[:file].present?
       # actually forward uploaded file on to Cloudinary server
@@ -15,7 +16,6 @@ class StartupsController < ApplicationController
       @startup.save
     end
 
-    Startup.create startup_params #
     redirect_to startups_path
   end
 
