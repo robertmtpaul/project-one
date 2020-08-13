@@ -19,6 +19,9 @@ body {
 a {
     text-decoration: none;
 }
+a:hover {
+    color: rgb(128, 49, 0);
+}
 nav li {
     display: inline;
     list-style-type: none;

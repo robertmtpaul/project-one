@@ -1,20 +1,22 @@
 
-<% @cities.each do |city, startups| %>
-    <%= link_to city_path(city.id) do %>
-        <%= city.name %>
-        <%= image_tag(city.image1) %>
-        <br>
-    <% end %>
-    
-    <p>Startups</p>
-    <ul class="startups">
-    <% startups.each do |s| %>
-        <li> 
-        <%= link_to startup_path(s.id) do %>
-        <%= image_tag(s.image) %>
-        </li>
-        <% end%>
-    <% end %>
-    </ul>
-<% end %>
-
+<div class="grid">
+    <div class="card">
+        <% @cities.each do |city, startups| %>
+            <%= link_to city_path(city.id) do %>
+                <%= city.name %>
+                    <%= image_tag(city.image1) %>
+                    <br>
+            <% end %>
+            <p class="startups">Startups</p>
+            <ul class="startups">
+                <% startups.each do |s| %>
+                <li> 
+                    <%= link_to startup_path(s.id) do %>
+                    <%= image_tag(s.image) %>
+                </li>
+                    <% end%>
+                <% end %>
+            </ul>
+    </div>
+        <% end %>
+</div>
