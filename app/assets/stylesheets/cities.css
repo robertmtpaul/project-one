@@ -1,30 +1,12 @@
-.grid {
-    position: relative; 
-    background-color: rgba(215, 238, 224, 0.954);
-    display: flex;
-    justify-content: flex-start;
-    box-sizing: border-box;
-    align-items: flex-start;
-}
 
 .card {
     background-color: rgba(215, 238, 224, 0.954);
-    display: inline-flex;
-    flex-wrap: wrap;
     width: 36%;
-    border-radius: 6%;
     padding: 10px 10px 10px 10px;
-    flex-direction: row;
-    margin: 4px;
+    margin: 10px;
 }
 
-img {
-    display: flex;
-    justify-content: center;
-    width: 30vw;
-    height: 20vh;
-}
-img:hover {
-    opacity: 80%;
+.card:hover{
+    border-top: 10px solid rgb(237, 165, 216);
 }
 

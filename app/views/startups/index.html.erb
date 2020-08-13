@@ -1,14 +1,16 @@
 <h2> All startups </h2>
-<div class="card">
-    <ul class="icons">
-        <% @startups.each do |s| %>
-            <li> 
-                <%= link_to startup_path(s.id) do %>
-                    <%= cl_image_tag(s.image) %>
-                    <%= s.status %>
 
-                <% end%>
-            </li>
+<div class="card-columns">
+   <% @startups.each do |s| %>
+     <div class="card">
+       <div class="card-block icons">
+        <%= link_to startup_path(s.id) do %>
+
+            <p class="card-title"><b><%= s.name %></b></p>
+            <%= cl_image_tag(s.image) %>
+            <p class="card-text"><%= s.description %></p>
         <% end %>
+       </div>
+     </div>
+   <% end %>
 </div>
-    </ul>

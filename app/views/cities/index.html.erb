@@ -1,11 +1,11 @@
-    <div class="album">
-        <% @cities.each do |city, startups| %>
+<% @cities.each do |city, startups| %>
+    <div class="card">
+        <div class="card-img-top"><%= image_tag(city.image1, class: "card-img-top") %></div>
+        <div class="card-block">
             <%= link_to city_path(city.id) do %>
-                <%= city.name %>
-                    <%= image_tag(city.image1) %>
-                    <br>
+                <p class="card-title"><b><%= city.name %></p>
+                <p class="card-text"></p>                  
             <% end %>
-            <p>Startups</p>
             <ul class="icons">
                 <% startups.each do |s| %>
                 <li> 
@@ -15,5 +15,6 @@
                 </li>
                 <% end %>
             </ul>
+        </div>
     </div>
-        <% end %>
+<% end %>

@@ -4,7 +4,7 @@
 <%= link_to 'Delete Startup', startup_path(@startup.id), method: 'delete' %>
 <h2> <%= @startup.name %> </h2>
 
-<%= cl_image_tag @startup.image, alt: @startup.name, class: 'icons' %>
+<%= cl_image_tag @startup.image, alt: @startup.name %>
 <p>
     <strong>Startup description:</strong> <%= @startup.description %>
 </p>

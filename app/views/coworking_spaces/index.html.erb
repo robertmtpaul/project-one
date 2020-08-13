@@ -5,9 +5,8 @@
      <div class="card">
        <div class="card-block">
         <%= link_to coworking_space_path(c.id) do %>
-
-            <p class="card-title"><b><%= c.name %></b></p>
             <%= cl_image_tag(c.image) %>
+            <p class="card-title"><b><%= c.name %></b></p>
             <p class="card-text"><%= c.description %></p>
         <% end %>
        </div>
