@@ -4,9 +4,17 @@
         <%= city.name %>
         <%= image_tag(city.image1) %>
         <br>
-
     <% end %>
-    <ul>
+    
+    <p>Startups</p>
+    <ul class="startups">
+    <% startups.each do |s| %>
+        <li> 
+        <%= link_to startup_path(s.id) do %>
+        <%= image_tag(s.image) %>
+        </li>
+        <% end%>
+    <% end %>
     </ul>
 <% end %>
 
