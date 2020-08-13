@@ -1,9 +1,12 @@
 
-<% @cities.each do |city| %>
+<% @cities.each do |city, startups| %>
     <%= link_to city_path(city.id) do %>
         <%= city.name %>
         <%= image_tag(city.image1) %>
         <br>
+
     <% end %>
+    <ul>
+    </ul>
 <% end %>
 

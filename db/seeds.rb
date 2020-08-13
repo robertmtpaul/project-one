@@ -20,28 +20,32 @@ puts "Creating cities"
 
 City.destroy_all
 
-City.create! name: 'Berlin', rank: 3, mercer: '2020: ranked 9th', image1: 'berlin1.jpg', image2: 'berlin2.jpg', internet_speed: 'avg. 30Mbps', costliving: 'Cheap'
+c1 = City.create! name: 'Berlin', rank: 3, mercer: '2020: ranked 9th', image1: 'berlin1.jpg', image2: 'berlin2.jpg', internet_speed: 'avg. 30Mbps'
 
-City.create! name: 'Canggu', rank: 1, mercer: '2020: ranked 400', image1: 'canggu.jpg', image2: 'canggu2.jpg', internet_speed: 'avg. 19Mbps', costliving: 'Cheap, $1266 USD per month'
+c2 = City.create! name: 'Canggu', rank: 1, mercer: '2020: ranked 400', image1: 'canggu.jpg', image2: 'canggu2.jpg', internet_speed: 'avg. 19Mbps'
 
 puts "Created  #{ City.count } cities"
 
 puts "Creating startups"
 Startup.destroy_all
 
-Startup.create! name: 'N26', description: 'Unicorn startup in fintech space operating throughout Europe. Based in Berlin.', valuation: 270000000, funding: 'Series D', status: 'private', city_id: 1, employees: 1500, favourite_id: '1', country_id: '2', image: 'https://res.cloudinary.com/dgqqw6hwo/image/upload/v1597275733/n26.png'
+s1 = Startup.create! name: 'N26', description: 'Unicorn startup in fintech space operating throughout Europe. Based in Berlin.', valuation: 270000000, funding: 'Series D', status: 'private', city_id: 1, employees: 1500, favourite_id: '1', country_id: '2', image: 'https://res.cloudinary.com/dgqqw6hwo/image/upload/v1597275733/n26.png'
 
-Startup.create! name: 'HelloFresh', description: 'Unicorn company now with multinational operations.', valuation: 270000000, funding: 'IPO', status: 'public IPO', city_id: 1, employees: 4726, favourite_id: '1', country_id: '2', image: 'https://res.cloudinary.com/dgqqw6hwo/image/upload/v1597275729/hellofresh.png'
+s2 = Startup.create! name: 'HelloFresh', description: 'Unicorn company now with multinational operations.', valuation: 270000000, funding: 'IPO', status: 'public IPO', city_id: 1, employees: 4726, favourite_id: '1', country_id: '2', image: 'https://res.cloudinary.com/dgqqw6hwo/image/upload/v1597275729/hellofresh.png'
 
-Startup.create! name: 'GetYourGuide', city_id: 1, description: 'Operates an online platform for booking tours, attractions and activities worldwide', valuation: 200000, funding: 'Series E, $654.5M', status: 'unicorn, private', employees: 2, favourite_id: '2', country_id: '3',image: 'https://res.cloudinary.com/dgqqw6hwo/image/upload/v1597275725/getyourguide.png'
+s3 = Startup.create! name: 'GetYourGuide', city_id: 1, description: 'Operates an online platform for booking tours, attractions and activities worldwide', valuation: 200000, funding: 'Series E, $654.5M', status: 'unicorn, private', employees: 2, favourite_id: '2', country_id: '3',image: 'https://res.cloudinary.com/dgqqw6hwo/image/upload/v1597275725/getyourguide.png'
 
 puts "Created  #{ Startup.count } startups"
 
 puts "Creating coworking spaces"
 
+c1.startups << s1 << s2
+c2.startups << s3
+
+
 CoworkingSpace.destroy_all
 
-CoworkingSpace.create! name: 'Dojo Bali', image: 'https://res.cloudinary.com/dgqqw6hwo/image/upload/v1597275896/canggu2.jpg', description: 'Great space with lots of good companies', reviews: 'Blah said that it was of dubious repute but boasted great views', companies: 'GetYourGuide have their offices in here', URL: 'https://www.dojobali.org/'
+CoworkingSpace.create! name: 'Dojo Bali', image: 'https://res.cloudinary.com/dgqqw6hwo/image/upload/v1597275896/canggu2.jpg', description: 'Great space with lots of good companies', reviews: 'Blah said that it was of dubious repute but boasted great views', companies: 'GetYourGuide have their offices in here', website_url: 'https://www.dojobali.org/'
 
 CoworkingSpace.create! name: 'Betahaus Berlin', image: 'berlin2.jpg', description: 'Cold and unwelcoming', reviews: 'Blah said that it was of dubious repute but boasted great views', companies: 'GetYourGuide have their offices in here'
 

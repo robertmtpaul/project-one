@@ -6,7 +6,7 @@ class CitiesController < ApplicationController
   end
 
   def index
-    @cities = City.all
+    @cities = Startup.all.group_by(&:city)
   end
 
   def show
