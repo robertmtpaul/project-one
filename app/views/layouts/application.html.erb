@@ -18,15 +18,17 @@
     Hello, <%= @current_user.name %> | <%= link_to 'Logout', login_path, method: 'delete'%>
     <ul>
     <% else %>
-      <li> <%= link_to 'Login', login_path %></li>
+      <li> <%= link_to 'Login |', login_path %></li>
       <li><%= link_to 'Sign Up |', new_user_path %> </li>
     <% end %>
       <li><%= link_to 'NomadList Cities |', cities_path %></li>
       <li><%= link_to 'Startups |', startups_path %></li>
+      <li><%= link_to 'Coworking Spaces |', coworking_spaces_path %></li>
       <li><%= link_to 'Add startup |', new_startup_path %></li>
       <li><%= link_to 'Add coworking space', new_coworking_space_path %></li>
     </nav>
     <hr>
+    
     <%= yield %>
   </body>
 </html>
