@@ -8,7 +8,7 @@
 }
 
 .card {
-    background-color: white;
+    background-color: rgba(215, 238, 224, 0.954);
     display: inline-flex;
     flex-wrap: wrap;
     width: 36%;
@@ -28,15 +28,3 @@ img:hover {
     opacity: 80%;
 }
 
-.startups p {
-    font-size: 2em;
-}
-
-.startups li {
-    list-style-type: none;
-}
-
-.startups img {
-    width: 9vh;
-    height: 7vh;
-}

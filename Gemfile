@@ -56,4 +56,4 @@ gem 'pry-byebug'
 
 gem 'cloudinary'
 
-gem 'bootstrap'
+gem 'bootstrap', '~> 5.0.0.alpha1'

@@ -1,8 +1,8 @@
-<h2> <%= @coworking_space.name %> </h2>
-
 <%= link_to 'Edit Coworking Space', edit_coworking_space_path(@coworking_space.id) %>
 |
 <%= link_to 'Delete coworking space', coworking_space_path(@coworking_space.id), method: 'delete' %>
+
+<h2> <%= @coworking_space.name %> </h2>
 
   <%= cl_image_tag @coworking_space.image, alt: @coworking_space.name, class: 'coworking' %>
 
@@ -13,7 +13,6 @@
 <p>
     <strong>Reviews:</strong> <%= @coworking_space.reviews %>
 </p>
-
 
 <p>
     <strong>companies:</strong>
