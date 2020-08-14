@@ -22,7 +22,7 @@ City.destroy_all
 
 c1 = City.create! name: 'Berlin', rank: 2, mercer: '2020: ranked 9th', image1: 'berlin1.jpg', image2: 'berlin2.jpg', internet_speed: 'avg. 30Mbps'
 
-c2 = City.create! name: 'Canggu', rank: 3, mercer: '2020: ranked 400', image1: 'canggu1.jpg', image2: 'canggu2.jpg', internet_speed: 'avg. 19Mbps'
+c2 = City.create! name: 'Canggu', rank: 3, mercer: 'No data', image1: 'canggu1.jpg', image2: 'canggu2.jpg', internet_speed: 'avg. 19Mbps'
 
 c3 = City.create! name: 'Lisbon', rank: 1, mercer: '2020: ranked 400', image1: 'lisbon1.jpg', image2: 'lisbon2.jpg', internet_speed: 'avg. 19Mbps'
 

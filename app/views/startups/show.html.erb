@@ -4,13 +4,13 @@
 <%= link_to 'Delete Startup', startup_path(@startup.id), method: 'delete' %>
 <h2> <%= @startup.name %> </h2>
 
-<%= cl_image_tag @startup.image, alt: @startup.name %>
+<%= cl_image_tag @startup.image, class: 'w-25 p-3', alt: @startup.name %>
 <p>
     <strong>Startup description:</strong> <%= @startup.description %>
 </p>
 
 <p>
-    <strong>Valuation:</strong> <%= @startup.valuation %>
+    <strong>Valuation(USD):</strong> <%= @startup.valuation %>
 </p>
 
 <p> 
