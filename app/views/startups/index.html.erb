@@ -1,16 +1,13 @@
-<h2> All startups </h2>
+<h2> List of startups in Nomadlist Cities </h2>
 
-<div class="card-columns">
-   <% @startups.each do |s| %>
-     <div class="card">
-       <div class="card-block icons">
-        <%= link_to startup_path(s.id) do %>
-
-            <p class="card-title"><strong><%= s.name %></strong></p>
-            <%= cl_image_tag(s.image) %>
-            <p class="card-text"><%= s.description %></p>
-        <% end %>
-       </div>
-     </div>
-   <% end %>
-</div>
+<div class="container">
+    <% @startups.each do |s| %>
+        <div class="card">
+            <%= link_to startup_path(s.id) do %>
+                <%= cl_image_tag(s.image, class: 'icons') %>
+                <strong><%= s.name %></strong>
+                <li><%= s.description %></li>
+            <% end %> 
+        </div>
+    <% end %> 
+    </div> 

@@ -69,4 +69,5 @@ img:hover {
     height: 300px;
     border-radius: 5%;
     padding: 10px;
+    list-style-type: none;
   }
