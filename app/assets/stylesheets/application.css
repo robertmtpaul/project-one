@@ -13,7 +13,6 @@
  *= require_tree .
  *= require_self
  */
-@import "bootstrap";
 
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -43,12 +42,26 @@ nav li {
     list-style-type: none;
 }
 
-.icons img {
-    width: 30%;
-    height: 30%;
+img {
+    width: 60px;
+    height: 40px;
 }
 
 img:hover {
     opacity: 80%;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+  
+.card {
+    background: white;
+    height: 300px;
+    border-radius: 5%;
+    padding: 10px;
+  }

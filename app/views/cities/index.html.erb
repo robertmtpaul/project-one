@@ -1,20 +1,22 @@
-<% @cities.each do |city, startups| %>
-    <div class="card">
+
+<div class="container">
+    <% @cities.each do |city, startups| %>
+        <div class="card">
             <%= link_to city_path(city.id) do %>
-        <div class="card-img-top"><%= image_tag(city.image1, class: "card-img-top") %></div>
-        <div class="card-block">
-                <p class="card-title"><b><%= city.name %></p>
-                <p class="card-text"></p>                  
-            <% end %>
-            <ul class="icons">
+                <%= image_tag(city.image1, class: 'icons') %>
+                <strong><%= city.name %></strong>
+                <ul class="icons">
                 <% startups.each do |s| %>
-                <li> 
+                    <li> 
                     <%= link_to startup_path(s.id) do %>
-                    <%= image_tag(s.image) %>
+                    <%= image_tag(s.image, class: 'icons') %>
+                    </li>
                     <% end%>
-                </li>
                 <% end %>
-            </ul>
+                </ul>
+            <% end %> 
         </div>
-    </div>
-<% end %>
+    </div> 
+    <% end %> 
+
+

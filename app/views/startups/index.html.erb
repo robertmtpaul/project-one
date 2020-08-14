@@ -6,7 +6,7 @@
        <div class="card-block icons">
         <%= link_to startup_path(s.id) do %>
 
-            <p class="card-title"><b><%= s.name %></b></p>
+            <p class="card-title"><strong><%= s.name %></strong></p>
             <%= cl_image_tag(s.image) %>
             <p class="card-text"><%= s.description %></p>
         <% end %>
