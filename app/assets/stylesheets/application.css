@@ -42,13 +42,23 @@ nav li {
     list-style-type: none;
 }
 
+.startups {
+    height: 120px;
+    padding: 15px;
+}
+
+.coworking_spaces {
+    width: 200px;
+    height: 120px;
+    padding: 15px;
+}
+
 .cities {
     width: 200px;
     height: 120px;
 }
 
 img {
-    width: 60px;
     height: 40px;
 }
 
@@ -66,8 +76,8 @@ img:hover {
   
 .card {
     background: white;
-    height: 300px;
+    height: 330px;
     border-radius: 5%;
-    padding: 10px;
+    padding: 20px;
     list-style-type: none;
   }

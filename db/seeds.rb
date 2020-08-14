@@ -20,11 +20,11 @@ puts "Creating cities"
 
 City.destroy_all
 
-c1 = City.create! name: 'Berlin', rank: 2, mercer: '2020: ranked 9th', image1: 'berlin1.jpg', image2: 'berlin2.jpg', internet_speed: 'avg. 30Mbps'
+c1 = City.create! name: 'Berlin', rank: 2, mercer: 'Ranked 9th', image1: 'berlin1.jpg', image2: 'berlin2.jpg', internet_speed: 'avg. 30Mbps'
 
 c2 = City.create! name: 'Canggu', rank: 3, mercer: 'No data', image1: 'canggu1.jpg', image2: 'canggu2.jpg', internet_speed: 'avg. 19Mbps'
 
-c3 = City.create! name: 'Lisbon', rank: 1, mercer: '2020: ranked 400', image1: 'lisbon1.jpg', image2: 'lisbon2.jpg', internet_speed: 'avg. 19Mbps'
+c3 = City.create! name: 'Lisbon', rank: 1, mercer: 'Ranked 37th', image1: 'lisbon1.jpg', image2: 'lisbon2.jpg', internet_speed: 'avg. 30Mbps'
 
 puts "Created  #{ City.count } cities"
 
@@ -39,9 +39,9 @@ s3 = Startup.create! name: 'GetYourGuide', city_id: 1, description: 'Headquarter
 
 s4 = Startup.create! name: 'Unbabel', city_id: 1, description: "Unbabel’s Customer Service Solution allows modern enterprises to understand and be understood by their customers in dozens of languages. https://unbabel.com/", valuation: 200000, funding: 'TBD', status: 'Unicorn, private', employees: 101, favourite_id: '2', country_id: 'delete', image: 'https://res.cloudinary.com/dgqqw6hwo/image/upload/v1597315171/unbabel.png'
 
-s5 = Startup.create! name: 'Codacy', city_id: 1, description: 'Automatically identify issues through static code review analysis. Get notified on security issues, code coverage, code duplication, and code complexity in every commit and pull request, directly from your current workflow. https://www.codacy.com/', valuation: 14400000, funding: 'TBD', status: 'TBD', employees: 10, favourite_id: '2', country_id: 'delete', image: 'https://res.cloudinary.com/dgqqw6hwo/image/upload/v1597315428/download-2_wf2ums.png'
+s5 = Startup.create! name: 'Codacy', city_id: 1, description: 'Automatically identify issues through static code review analysis. Get notified on security issues, code coverage, code duplication, and code complexity. https://www.codacy.com/', valuation: 14400000, funding: 'TBD', status: 'TBD', employees: 10, favourite_id: '2', country_id: 'delete', image: 'https://res.cloudinary.com/dgqqw6hwo/image/upload/v1597370008/codacy_u0ylrc.png'
 
-s6 = Startup.create! name: 'Labster', city_id: 1, description: 'Labs company operating out of Denpasar', valuation: 200000, funding: 'TBC', status: 'larger company', employees: 50, favourite_id: 'delete', country_id: 'delete', image: 'https://res.cloudinary.com/dgqqw6hwo/image/upload/v1597315044/labster.png'
+s6 = Startup.create! name: 'Labster', city_id: 1, description: 'Labs company operating out of Denpasar', valuation: 200000, funding: 'TBC', status: 'larger company', employees: 50, favourite_id: 'delete', country_id: 'delete', image: 'https://res.cloudinary.com/dgqqw6hwo/image/upload/v1597369846/labster1.png'
 
 puts "Created  #{ Startup.count } startups"
 
@@ -53,9 +53,9 @@ c3.startups << s4 << s5
 
 CoworkingSpace.destroy_all
 
-CoworkingSpace.create! name: 'Dojo Bali', image: 'https://res.cloudinary.com/dgqqw6hwo/image/upload/v1597275896/canggu2.jpg', description: 'Great space with lots of good companies', reviews: 'Blah said that it was of dubious repute but boasted great views', companies: 'GetYourGuide have their offices in here', website_url: 'https://www.dojobali.org/'
+CoworkingSpace.create! name: 'Dojo Bali', image: 'https://res.cloudinary.com/dgqqw6hwo/image/upload/v1597371046/dojobali_hjubue.jpg', description: 'Great space with lots of good companies', reviews: "Location is on the beach, can't get much better", companies: 'Hubud started here', website_url: 'https://www.dojobali.org/'
 
-CoworkingSpace.create! name: 'Betahaus Berlin', image: 'https://res.cloudinary.com/dgqqw6hwo/image/upload/v1597275896/canggu2.jpg', description: 'Cold and unwelcoming', reviews: 'Blah said that it was of dubious repute but boasted great views', companies: 'GetYourGuide have their offices in here', website_url: 'https://www.dojobali.org/'
+CoworkingSpace.create! name: 'Betahaus Berlin', image: 'https://res.cloudinary.com/dgqqw6hwo/image/upload/v1597370915/betahaus_e24qmb.jpg', description: 'A great location', reviews: 'Lots of support provided and great coffee', companies: 'GetYourGuide have their offices in here', website_url: 'https://www.betahaus.com/'
 
 puts "Created  #{ CoworkingSpace.count } coworking spaces"
 

@@ -4,7 +4,8 @@
     <% @coworking_spaces.each do |c| %>
         <div class="card">
             <%= link_to coworking_space_path(c.id) do %>
-                <%= image_tag(c.image, class: 'icons') %>
+                <%= image_tag(c.image, class: 'coworking_spaces') %>
+                <br>
                 <strong><%= c.name %></strong>
                 <li><%= c.description %></li>
             <% end %> 
