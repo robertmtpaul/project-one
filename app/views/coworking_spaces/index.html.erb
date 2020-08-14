@@ -13,3 +13,24 @@
      </div>
    <% end %>
 </div>
+
+
+<div class="container">
+    <% @coworking_spaces.each do |c| %>
+        <div class="card">
+            <%= link_to coworking_space_path(c.id) do %>
+                <%= image_tag(c.image, class: 'icons') %>
+                <strong><%= c.name %></strong>
+                <ul class='icons'>
+                <% startups.each do |s| %>
+                    <li> 
+                    <%= link_to startup_path(s.id) do %>
+                        <%= image_tag(s.image, class: 'icons') %>
+                    </li>
+                    <% end%>
+                <% end %>
+                </ul>
+            <% end %> 
+        </div>
+    <% end %> 
+    </div> 
