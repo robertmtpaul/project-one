@@ -55,3 +55,5 @@ gem 'pry-rails'
 gem 'pry-byebug'
 
 gem 'cloudinary'
+
+gem 'bootstrap', '~> 5.0.0.alpha1'
