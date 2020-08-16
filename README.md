@@ -2,7 +2,7 @@
 
 https://serene-badlands-54748.herokuapp.com/
 
-## Features
+### Features
 - View the startups associated with each city selected
 - Create a user account and log in
 - Add a new startup to the site
@@ -11,9 +11,9 @@ https://serene-badlands-54748.herokuapp.com/
 
 ### Technologies
 
-- HTML5& CSS3
-- Ruby (built with 2.7.0)
 - Ruby on Rails (built with 5.2.4.3)
+- Ruby (built with 2.7.0)
+- HTML5& CSS3
 - Node
 - Homebrew
 - Cloudinary gem
@@ -26,21 +26,21 @@ To run this project, install it locally using Homebrew.
 You can install Ruby, Ruby on Rails and gems run the following commands using Homebrew: 
 
 ```
-brew install ruby
-brew install node
-gem install rails -v 5.2.4.3
-gem install heroku
-gem install heroku
-
-To then run the server locally you will need to run: 
-
+$ brew install ruby
+$ brew install node
+$ gem install rails -v 5.2.4.3
+$ brew tap heroku/brew && brew install heroku
+$ gem install cloudinary
 ```
-rails server
+
+To install the required gems in rails run: 
+```
+$bundle install
 ```
 
 You can then navigate to `localhost:3000`. 
 
-## Deployment
+### Deployment
 
 I used Heroku to deploy this project to a live system. 
 
@@ -56,14 +56,10 @@ heroku run rails db:seed
 heroku open
 ```
 
-## Built With
+### Planning stages
 
-* [Ruby On Rails](https://guides.rubyonrails.org/getting_started.html)
 
-## Version Control
 
-I used GIT for versioning.
-
-## Acknowledgments
+### Acknowledgments
 
 * My instructors Luke and Zara at General Assembly who made this project a reality, thank you!
