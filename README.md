@@ -56,9 +56,13 @@ heroku run rails db:seed
 heroku open
 ```
 
+### Screenshot
+
+![image](app/assets/images/Screenshot.png)
+
 ### Planning stages
 
-
+![image](app/assets/images/Wireframe.png)
 
 ### Acknowledgments
 
