@@ -39,7 +39,7 @@ s3 = Startup.create! name: 'GetYourGuide', description: 'Headquarters in Berlin.
 
 s4 = Startup.create! name: 'Unbabel', description: "Unbabel’s Customer Service Solution allows modern enterprises to understand and be understood by their customers in dozens of languages.", valuation: 60000000, funding: 'Series C', status: 'Late stage venture', employees: 150, image: 'https://res.cloudinary.com/dgqqw6hwo/image/upload/v1597315171/unbabel.png', website_url: 'https://unbabel.com/'
 
-s5 = Startup.create! name: 'Codacy', description: 'Automatically identify issues through static code review analysis. Get notified on security issues, code coverage, code duplication, and code complexity.' valuation: 14400000, funding: 'Venture round, 4 funding rounds', status: 'Private venture', employees: 10, image: 'https://res.cloudinary.com/dgqqw6hwo/image/upload/v1597370008/codacy_u0ylrc.png', website_url: 'https://www.codacy.com/'
+s5 = Startup.create! name: 'Codacy', description: 'Automatically identify issues through static code review analysis. Get notified on security issues, code coverage, code duplication, and code complexity.', valuation: 14400000, funding: 'Venture round, 4 funding rounds', status: 'Private venture', employees: 10, image: 'https://res.cloudinary.com/dgqqw6hwo/image/upload/v1597370008/codacy_u0ylrc.png', website_url: 'https://www.codacy.com/'
 
 s6 = Startup.create! name: 'Labster', description: 'Operating in Denpasar. Virtual labs startup offering virtual labs to engage students with science.', valuation: 437000000, funding: 'Series Unknown', status: 'Private venture.', employees: 50, image: 'https://res.cloudinary.com/dgqqw6hwo/image/upload/v1597369846/labster1.png', website_url: 'https://www.labster.com/'
 
