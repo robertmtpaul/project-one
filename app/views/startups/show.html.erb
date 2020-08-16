@@ -5,26 +5,34 @@
 <h2> <%= @startup.name %> </h2>
 
 <%= cl_image_tag @startup.image, class: 'startups', alt: @startup.name %>
-<p>
-    <strong>Startup description:</strong> <%= @startup.description %>
-</p>
 
-<p>
-    <strong>Valuation(USD):</strong> <%= @startup.valuation %>
-</p>
-
-<p> 
-    <strong>Source of funding:</strong>
-    <%= @startup.funding %>
-</p>
-
-<p>
-    <strong>Status:</strong>
-    <%= @startup.status %>
-</p>
-<p>
-    <strong>Number of employees:</strong>
-    <%= @startup.employees %>
-</p>
-
-
+<table style="width:70%">
+  <tr>
+    <td> <strong>Startup description:</strong> </td>
+    <td><%= @startup.description %></td>
+  </tr>
+  <tr>
+    <td> <strong>Located in:</strong> </td>
+    <td><%= @startup.city.name %></td>
+  </tr>
+  <tr>
+    <td><strong>Valuation(USD):</strong> </td>
+    <td><%= @startup.valuation %></td>
+  </tr>
+  <tr>
+    <td><strong>Source of funding:</strong></td>
+    <td><%= @startup.funding %></td>
+  </tr>
+  <tr>
+    <td><strong>Status:</strong></td>
+    <td><%= @startup.status %></td>
+  </tr>
+  <tr>
+    <td><strong>Number of employees:</strong></td>
+    <td><%= @startup.employees %></td>
+  </tr>
+  <tr>
+    <td><strong>Find out more</strong></td>
+    <td><a href="<%= @startup.website_url%>"><%= @startup.name %> Website</td>
+  </tr>
+</table>

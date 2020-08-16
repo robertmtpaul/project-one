@@ -3,26 +3,25 @@
 <%= link_to 'Delete coworking space', coworking_space_path(@coworking_space.id), method: 'delete' %>
 
 <h2> <%= @coworking_space.name %> </h2>
+<%= cl_image_tag @coworking_space.image, class: 'coworking_spaces', alt: @coworking_space.name %>
 
-  <%= cl_image_tag @coworking_space.image, class: 'coworking_spaces', alt: @coworking_space.name %>
-
-<p>
-    <strong>Coworking space description:</strong> <%= @coworking_space.description %>
-</p>
-
-<p>
-    <strong>Reviews:</strong> <%= @coworking_space.reviews %>
-</p>
-
-<p>
-    <strong>companies:</strong>
-    <%= @coworking_space.companies %>
-</p>
-
-<p>
-    <strong>URL:</strong> <%= @coworking_space.website_url %>
-</p>
-
-
+<table style="width:70%">
+  <tr>
+    <td> <strong>Coworking space description:</strong> </td>
+    <td><%= @coworking_space.description %></td>
+  </tr>
+  <tr>
+    <td><strong>Reviews:</strong> </td>
+    <td><%= @coworking_space.reviews %></td>
+  </tr>
+  <tr>
+    <td><strong>Companies:</strong></td>
+    <td><%= @coworking_space.companies %></td>
+  </tr>
+  <tr>
+    <td><strong>Find out more</strong></td>
+    <td><a href="<%= @coworking_space.website_url%>"><%= @coworking_space.name %> Website</td>
+  </tr>
+</table>
 
 

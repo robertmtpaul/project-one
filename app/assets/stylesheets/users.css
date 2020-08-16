@@ -3,3 +3,12 @@
 }
 
 
+form {
+    display: flex;
+    flex-direction: column;   
+    max-width: 40vw;
+}
+
+input {
+    padding: 10px;
+}
