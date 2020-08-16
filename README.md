@@ -1,24 +1,36 @@
+# URL
+
+https://serene-badlands-54748.herokuapp.com/
+
+
 # Project Title
 
-One Paragraph of project description goes here
+NomadList
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+## Motivation
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+- Ruby 2.7.0
+- Ruby on Rails 5.2.4.3
+- Node
+- Homebrew
+- Cloudinary
 
-```
-Give examples
-```
+
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+To get the development environment running for this project, you will need to run the following commands:
 
-Say what the step will be
+
+
+```
+rails server
+```
+
+You can then navigate to `localhost:3000`. 
+
 
 ```
 Give the example
@@ -54,37 +66,28 @@ Give an example
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+I used Heroku to deploy this project to a live system. 
+
+To deploy, I used the following commands
+```
+heroku login
+heroku create
+```
+
+
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Ruby On Rails](https://guides.rubyonrails.org/getting_started.html)
 
-## Contributing
+## Version Control
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+I used GIT for versioning.
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* My instructors Luke and Zara at General Assembly who made this project a reality, thank you!
+* Thanks also to Nomadlist.com for the inspiration to build this project.
 
 
 
