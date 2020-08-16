@@ -21,7 +21,7 @@ body {
 }
 
 header {
-    margin: 0 auto;
+    margin: 0 ato;
 }
 
 .greeting {
@@ -33,26 +33,28 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:hover { 
     text-decoration: none;
-    color:hotpink;
 }
 
 nav {
     background-color: black;
+    color: white;
     padding: 15px; 
     display: flex;
     justify-content: space-around;
     margin-bottom: 10px;
 }
 
-nav a {
+.navlink a { 
     color: white;
+    text-decoration: none;
 }
 
-nav li:hover {
-    background-color: pink;
-
+.navlink :hover {
+    text-decoration: none;
+    color: pink;
+    background-color: white;
 }
 
 .icons p {
