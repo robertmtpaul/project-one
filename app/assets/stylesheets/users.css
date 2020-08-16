@@ -2,6 +2,9 @@
     color: red;
 }
 
+.wrapper {
+    margin-left: 20px;
+}
 
 form {
     display: flex;

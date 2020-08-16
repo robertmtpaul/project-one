@@ -21,13 +21,28 @@
       </div>
 
       <% else %>
-        <%= link_to 'Login', login_path %>
-        <%= link_to 'Sign Up', new_user_path %>
-      <% end %>
+      <div class="navlink">
+        <%= link_to 'Login', login_path %></div>
+      </div>
+      <div class="navlink">
+        <%= link_to 'Sign Up', new_user_path %> 
+      </div>
+    <% end %>
+      <div class="navlink">
         <%= link_to 'NomadList Cities', cities_path %>
+      </div>
+      <div class="navlink">
         <%= link_to 'Startups', startups_path %>        
-        <%= link_to 'Coworking Spaces', coworking_spaces_path %>   <%= link_to 'Add startup', new_startup_path %>
+      </div>
+      <div class="navlink">
+        <%= link_to 'Coworking Spaces', coworking_spaces_path %>
+      </div>
+      <div class="navlink">
+        <%= link_to 'Add startup', new_startup_path %>
+      </div>
+      <div class="navlink">
         <%= link_to 'Add coworking space', new_coworking_space_path %>
+      </div>
     </nav>
   </header>
     
