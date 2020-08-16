@@ -3,7 +3,8 @@
 https://serene-badlands-54748.herokuapp.com/
 
 ### Features
-- View the startups associated with each city selected
+- Find cities that are ideal for working remotely
+- See startups located in each city selected
 - Create a user account and log in
 - Add a new startup to the site
 - Edit existing startups/coworking spaces
@@ -11,8 +12,7 @@ https://serene-badlands-54748.herokuapp.com/
 
 ### Technologies
 
-- Ruby on Rails (built with 5.2.4.3)
-- Ruby (built with 2.7.0)
+- Ruby on Rails (built with 5.2.4.3) & Ruby (built with 2.7.0)
 - HTML5& CSS3
 - Node
 - Homebrew
@@ -63,6 +63,18 @@ heroku open
 ### Planning stages
 
 ![image](app/assets/images/Wireframe.png)
+
+### Wish List
+Features/functionality I would like to continue adding to this project include:
+- Countries & regions tables for grouping cities
+- Editing of user profile
+- Ability to add comments and reviews to the cities, coworking spaces and startups
+- Breadcrumbs on each page for navigation, e.g. region > country > city > startup
+- Ability to like cities/startups/coworking spaces, and follow other users
+- Add employer category of user so companies can link up with digital nomads
+
+### Contributing
+Pull requests welcomed!
 
 ### Acknowledgments
 
