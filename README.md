@@ -1,68 +1,44 @@
-# URL
+# NomadList - a sharing site for digital nomads
 
 https://serene-badlands-54748.herokuapp.com/
 
+## Features
+- View the startups associated with each city selected
+- Create a user account and log in
+- Add a new startup to the site
+- Edit existing startups/coworking spaces
+- Delete existing startups/coworking spaces
 
-# Project Title
+### Technologies
 
-NomadList
-
-## Motivation
-
-### Prerequisites
-
-- Ruby 2.7.0
-- Ruby on Rails 5.2.4.3
+- HTML5& CSS3
+- Ruby (built with 2.7.0)
+- Ruby on Rails (built with 5.2.4.3)
 - Node
 - Homebrew
-- Cloudinary
+- Cloudinary gem
+- Heroku
 
+### Setup
 
+To run this project, install it locally using Homebrew.
 
-### Installing
+You can install Ruby, Ruby on Rails and gems run the following commands using Homebrew: 
 
-To get the development environment running for this project, you will need to run the following commands:
+```
+brew install ruby
+brew install node
+gem install rails -v 5.2.4.3
+gem install heroku
+gem install heroku
 
-
+To then run the server locally you will need to run: 
 
 ```
 rails server
 ```
 
 You can then navigate to `localhost:3000`. 
-
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Deployment
 
@@ -72,9 +48,13 @@ To deploy, I used the following commands
 ```
 heroku login
 heroku create
+git add .
+git commit -m "Heroku deployment"
+git push heroku master
+heroku run rails db:migrate
+heroku run rails db:seed
+heroku open
 ```
-
-
 
 ## Built With
 
@@ -87,32 +67,3 @@ I used GIT for versioning.
 ## Acknowledgments
 
 * My instructors Luke and Zara at General Assembly who made this project a reality, thank you!
-* Thanks also to Nomadlist.com for the inspiration to build this project.
-
-
-
-
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-The version it's running is 2.7.0, running with ... 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
