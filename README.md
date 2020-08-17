@@ -1,7 +1,5 @@
 # NomadList - a sharing site for digital nomads
 
-https://serene-badlands-54748.herokuapp.com/
-
 ### Features
 - Find cities that are ideal for working remotely
 - See startups located in each city selected
