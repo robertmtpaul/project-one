@@ -37,7 +37,7 @@ s2 = Startup.create! name: 'HelloFresh', description: 'Headquarters in Berlin. U
 
 s3 = Startup.create! name: 'GetYourGuide', description: 'Headquarters in Berlin. Operates an online platform for booking tours, attractions and activities worldwide', valuation: 200000, funding: 'Series E', city_id: 3, status: 'unicorn, private', employees: 14, image: 'https://res.cloudinary.com/dgqqw6hwo/image/upload/v1597275725/getyourguide.png', website_url: 'https://www.getyourguide.com/'
 
-s4 = Startup.create! name: 'Unbabel', description: "Unbabel’s Customer Service Solution allows modern enterprises to understand and be understood by their customers in dozens of languages.", city_id: 3, valuation: 60000000, funding: 'Series C', status: 'Late stage venture', employees: 150, image: 'https://res.cloudinary.com/dgqqw6hwo/image/upload/v1597315171/unbabel.png', website_url: 'https://unbabel.com/'
+s4 = Startup.create! name: 'Unbabel', description: "Unbabel’s Customer Service Solution allows modern enterprises to understand and be understood by their customers in dozens of languages.", city_id: 3, valuation: 60000000, funding: 'Series C', status: 'Late stage venture', employees: 150, image: 'https://res.cloudinary.com/dgqqw6hwo/image/upload/v1597925492/unbabel.png', website_url: 'https://unbabel.com/'
 
 s5 = Startup.create! name: 'Codacy', description: 'Automatically identify issues through static code review analysis. Get notified on security issues, code coverage, code duplication, and code complexity.', city_id: 3, valuation: 14400000, funding: 'Venture round, 4 funding rounds', status: 'Private venture', employees: 10, image: 'https://res.cloudinary.com/dgqqw6hwo/image/upload/v1597370008/codacy_u0ylrc.png', website_url: 'https://www.codacy.com/'
 
