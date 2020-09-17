@@ -12,7 +12,7 @@
 
 ### Technologies
 
-- Ruby on Rails (built with 5.2.4.3) & Ruby (built with 2.7.0)
+- Ruby on Rails (built with 5.2.4.3)
 - HTML5& CSS3
 - Node
 - Homebrew
