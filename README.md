@@ -1,4 +1,6 @@
-# NomadList - a sharing site for digital nomads
+# README
+
+## NomadList - a sharing site for digital nomads
 
 ### Features
 - Find cities that are ideal for working remotely
