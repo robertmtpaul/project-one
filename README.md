@@ -1,5 +1,3 @@
-# README
-
 ## NomadList - a sharing site for digital nomads
 
 ### Features
